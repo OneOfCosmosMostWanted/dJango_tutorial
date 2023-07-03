@@ -12,12 +12,12 @@ class QuestionAdmin(admin.ModelAdmin):
      fields = ['pub_date', 'question_text']
 
 """
-# field separation
+# field separation and collapse 
 
 class QuestionAdmin(admin.ModelAdmin):
      fieldsets = [
           ('Question Statement', {'fields': ['question_text']}),
-          ('Date Information', {'fields': ['pub_date']}),
+          ('Date Information', {'fields': ['pub_date'], 'classes': ['collapse']}),
      ]
 
 admin.site.register(Question, QuestionAdmin)
