@@ -35,6 +35,7 @@ class QuestionAdmin(admin.ModelAdmin):
      ]
      inlines = [ChoiceInline]  # Choice model class under Question model
      list_display = ('question_text', 'pub_date')  # list column created
+     list_filter = ['pub_date']                    # filter side bar added
 
 admin.site.register(Question, QuestionAdmin)
 admin.site.register(Choice)
