@@ -5,7 +5,7 @@ from django.shortcuts import render
 from django.views.generic.base import TemplateView
 from django.views.generic import ListView
 from django.views.generic import DetailView
-from books.model import Book, Author, Publisher
+from books.models import Book, Author, Publisher
 
 
 # TemplateView 
